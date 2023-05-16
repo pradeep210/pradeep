@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -415.58,
+      "left": 1.78,
+      "attrs": {}
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": 353.24, "left": 46.42, "attrs": {} }
+  ],
+  "connections": [
+    [ "mega:11", "keypad1:C4", "green", [ "v-84.45", "h22.39" ] ],
+    [ "mega:10", "keypad1:C3", "green", [ "v-89.23", "h2.12" ] ],
+    [ "mega:9", "keypad1:C2", "green", [ "v-85.64", "h-17.44" ] ],
+    [ "mega:8", "keypad1:C1", "green", [ "v-85.64", "h-36.51" ] ],
+    [ "mega:4", "keypad1:R1", "green", [ "v-83.25", "h-117.96" ] ],
+    [ "mega:5", "keypad1:R2", "green", [ "v-88.04", "h-100.09" ] ],
+    [ "mega:6", "keypad1:R3", "green", [ "v-89.23", "h-82.22" ] ],
+    [ "mega:7", "keypad1:R4", "green", [ "v-88.04", "h-60.27" ] ]
+  ],
+  "dependencies": {}
+}
